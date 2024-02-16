@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+.loading {
+    text-align: center;
+    font-style: italic;
+}
+
+.error-page {
+    display: none;
+    color: red;
+}
+
+#main-content {
+    margin-bottom: 30px;
+}
+
+.similar-anime {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.poster {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.poster img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.poster h3 {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.episode-list {
+    border-top: 2px solid #333;
+    padding-top: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
