@@ -1,66 +1,112 @@
-body {
-    font-family: Arial, sans-serif;
+/* CSS styles for AnimeDex */
+
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul, li, button {
     margin: 0;
     padding: 0;
 }
 
+/* Set default font family and size */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* Header styles */
 header {
-    background-color: #333;
+    background-color: #202125;
     color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#title1 img {
+    display: block;
+}
+
+#search-div form {
+    display: flex;
+    align-items: center;
+}
+
+#query {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 8px 10px;
+    border: none;
+    background-color: #ff69b4;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Main content section styles */
+section {
     padding: 20px;
-    text-align: center;
 }
 
-main {
-    padding: 20px;
+.divox {
+    margin-bottom: 20px;
 }
 
-.loading {
-    text-align: center;
-    font-style: italic;
+#latest {
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
-.error-page {
-    display: none;
-    color: red;
+#latest2 {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-#main-content {
-    margin-bottom: 30px;
-}
-
-.similar-anime {
+.popularg, .recento {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.poster {
-    width: 30%;
+.popularg a, .recento a {
+    flex: 0 0 calc(25% - 20px);
     margin-bottom: 20px;
+    text-decoration: none;
+    color: #000;
 }
 
-.poster img {
-    width: 100%;
-    border-radius: 5px;
+/* Loading spinner styles */
+#load {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
 }
 
-.poster h3 {
-    margin-top: 10px;
-    font-size: 16px;
+#load img {
+    width: 50px;
+    height: 50px;
 }
 
-.episode-list {
-    border-top: 2px solid #333;
-    padding-top: 20px;
-}
-
+/* Footer styles */
 footer {
-    background-color: #333;
+    background-color: #202125;
     color: #fff;
+    padding: 10px 20px;
     text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
