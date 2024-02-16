@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Watching Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Anime Watching Website</h1>
+    </header>
+    <main>
+        <div id="load" class="loading">Loading...</div>
+        <div id="error-page" class="error-page">
+            <h2>Error:</h2>
+            <p id="error-desc"></p>
+        </div>
+        <div id="main-content" style="display: none;">
+            <!-- Anime Information will be loaded here -->
+        </div>
+        <div id="similar-div">
+            <h2>Similar Anime Recommendations</h2>
+            <div id="latest2" class="similar-anime">
+                <!-- Similar Anime Recommendations will be loaded here -->
+            </div>
+        </div>
+        <div id="ephtmldiv" class="episode-list">
+            <h2>Episode List</h2>
+            <!-- Episode List will be loaded here -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Anime Watching Website</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
